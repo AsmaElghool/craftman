@@ -2,4 +2,12 @@
     <string name="app_name">Craftsmen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_app">أهلا بك في التطبيق</string>
+    <string name="tv2_first_screen_txt">انضم إلى مجتمعنا وقدم خدماتك بكل سهولة. \n  احصل علي فرص جديدة ووفر وقتك.</string>
+    <string name="tv1_second_screen_txt">تواجه صعوبة في العثور على حرفي ؟</string>
+    <string name="tv2_second_screen_txt">اعثر على الحرفي المناسب بسهولة وأمان. \n ابحث عن الخدمات التي تحتاجها في مكان واحد.</string>
+    <string name="tv1_third_screen_txt">ابدأ رحلتك الآن !</string>
+    <string name="tv2_third_screen_txt">تذكر أن تقييمك ومراجعتك للحرفي يوفر للجميع \n تجربة أفضل دائما.</string>
+    <string name="btn_third_screen_txt">ابدا الان </string>
+
 </resources>
