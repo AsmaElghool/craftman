@@ -1,5 +1,7 @@
 package com.it.craftsmen.onboarding
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,7 +16,7 @@ import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 
 
 class ViewPagerFragment : Fragment() {
-
+    private lateinit var sharedPreferences:SharedPreferences
     lateinit var binding: OnboardingViewPagerFragmentBinding
     private lateinit var viewPager: ViewPager2
     private val fragments = listOf(
@@ -32,19 +34,24 @@ class ViewPagerFragment : Fragment() {
         binding = OnboardingViewPagerFragmentBinding.inflate(layoutInflater)
         viewPager = binding.viewPager
         initViewPager()
-
-        // Handle backStack
-        requireActivity().onBackPressedDispatcher.addCallback(
-            viewLifecycleOwner,
-            object : OnBackPressedCallback(true) {
-                override fun handleOnBackPressed() {
-                    if (currentPage > 0) {
-                        viewPager.currentItem = currentPage - 1
-                    } else {
-                        requireActivity().finish()
+        sharedPreferences =requireActivity().getPreferences(Context.MODE_PRIVATE)
+        if (isOnboardingCompleted()){
+            requireActivity().finish()
+        }else {
+            // Handle backStack
+            requireActivity().onBackPressedDispatcher.addCallback(
+                viewLifecycleOwner,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        if (currentPage > 0) {
+                            viewPager.currentItem = currentPage - 1
+                        } else {
+                            setOnboardingCompleted()
+                            requireActivity().finish()
+                        }
                     }
-                }
-            })
+                })
+        }
 
         return binding.root
     }
@@ -94,6 +101,13 @@ class ViewPagerFragment : Fragment() {
                 binding.onboardingNextBtn.visibility = View.INVISIBLE
             }
         }
+    }
+    private fun isOnboardingCompleted(): Boolean {
+        return sharedPreferences.getBoolean("onboarding_completed", false)
+    }
+
+    private fun setOnboardingCompleted() {
+        sharedPreferences.edit().putBoolean("onboarding_completed", true).apply()
     }
 
 }

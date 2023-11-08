@@ -53,7 +53,7 @@
 
 
         <Button
-            android:id="@+id/btnSocial"
+            android:id="@+id/btn_start_now"
             style="@style/Text_button"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"

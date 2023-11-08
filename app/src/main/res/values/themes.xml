@@ -20,4 +20,8 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="Colored_checkBox" parent="Theme.Craftsmen">
+        <item name="colorAccent">@color/main_Color</item>
+        <item name="android:textColorSecondary">@color/gray_200</item>
+    </style>
 </resources>

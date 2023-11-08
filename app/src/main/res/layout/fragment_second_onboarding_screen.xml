@@ -44,11 +44,12 @@
            android:layout_centerInParent="true"
            android:layout_marginTop="@dimen/_16sdp"
            android:gravity="center"
+           android:layout_marginBottom="@dimen/_88sdp"
            android:textAlignment="center"
            android:text="@string/tv2_second_screen_txt"
            app:layout_constraintEnd_toEndOf="@id/tv1_second_screen"
            app:layout_constraintStart_toStartOf="@id/tv1_second_screen"
-           app:layout_constraintTop_toBottomOf="@+id/tv1_second_screen" />
+           app:layout_constraintBottom_toBottomOf="parent"/>
 
    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -20,12 +20,23 @@
         android:id="@+id/loginFragment"
         android:name="com.it.craftsmen.auth.ui.LoginFragment"
         android:label="auth_login_fragment"
-        tools:layout="@layout/auth_login_fragment" />
+        tools:layout="@layout/auth_login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.it.craftsmen.auth.ui.SignupFragment"
         android:label="auth_signup_fragment"
-        tools:layout="@layout/auth_signup_fragment" />
+        tools:layout="@layout/auth_signup_fragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
         android:name="com.it.craftsmen.auth.ui.ForgotPasswordFragment"

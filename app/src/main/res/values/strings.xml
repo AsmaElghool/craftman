@@ -9,5 +9,22 @@
     <string name="tv1_third_screen_txt">ابدأ رحلتك الآن !</string>
     <string name="tv2_third_screen_txt">تذكر أن تقييمك ومراجعتك للحرفي يوفر للجميع \n تجربة أفضل دائما.</string>
     <string name="btn_third_screen_txt">ابدا الان </string>
+    <string name="tv1_login_txt">إنشاء حساب</string>
+    <string name="email_auth_login_txt">البريد الإلكتروني</string>
+    <string name="user_name_auth_login_txt">إسم المستخدم</string>
+    <string name="password_auth_login_txt">كلمة المرور</string>
+    <string name="confirm_password_auth_login_txt">تأكيد كلمة المرور</string>
+    <string name="auth_login_agree_to_rules">أوافق على سياسات الشروط والأحكام</string>
+    <string name="or">أو</string>
+    <string name="use_google_account_txt">المتابعة بحساب Google</string>
+    <string name="already_have_account_txt">بالفعل لديك حساب؟</string>
+    <string name="login_with_account_txt">قم بتسجيل الدخول</string>
+    <string name="tv1_forget_password_txt">نسيت كلمة المرور ؟</string>
+    <string name="tv2_forget_password_txt">من فضلك قم بإدخال بريدك الالكتروني  \n لإعادة تعيين كلمة المرور</string>
+    <string name="tv_forget_password_signup_txt">نسيت كلمه المرور؟</string>
+    <string name="tv1_signup_txt">تسجيل الدخول</string>
+    <string name="btn_signup_login">تسجيل الدخول</string>
+    <string name="tv2_signup_dont_have_account">لا تمتلك حسابا؟</string>
+    <string name="tv3_signup_make_account">قم بإنشاء حساب</string>
 
 </resources>
